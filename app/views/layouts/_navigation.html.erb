@@ -2,15 +2,13 @@
         <a class="item">
             Home
         </a>
-        <a class="item">
-            Chatroom
-        </a>
+        <%=link_to "Chatroom", root_path, :class => "item"%>
         <a class = "item">Messages</a>
         <div class="ui simple dropdown item">
             <span class="text">Acount</span>
             <i class="dropdown icon"></i>
             <div class="menu">
-              <div class="item">Log In</div>
+              <%=link_to "Login", login_path, :class => "item"%>
               <div class="item">Log Out</div>
               <div class="item">Sign Up</div>
 
