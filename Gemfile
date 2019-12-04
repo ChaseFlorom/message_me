@@ -23,6 +23,7 @@ gem 'semantic-ui-sass'
 
 #Jquery
 gem 'jquery-rails'
+gem 'jquery'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
