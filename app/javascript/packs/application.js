@@ -27,6 +27,7 @@ require("channels")
 
 
 $( document ).on('turbolinks:load', function() {
+  scroll_bottom();
   $('.message .close')
   .on('click', function() {
     console.log("button")
@@ -34,3 +35,12 @@ $( document ).on('turbolinks:load', function() {
   })
 ;
 })
+
+console.log("this should be working..")
+
+window.scroll_bottom = function() {
+  console.log("scrolling to the bottom")
+  if($('#messages'.length > 0)) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
